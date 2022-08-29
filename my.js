@@ -13,5 +13,5 @@ var mainProgram = function () {
 
 window.onload = function () {
     $("click").onclick = mainProgram;
-    $("item_cost").focus(); //puts the cursor on the first DOM text input box
+    $("item_cost").focus(); //puts thnput box
 }
