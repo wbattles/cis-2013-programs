@@ -13,5 +13,5 @@ var mainProgram = function () {
 
 window.onload = function () {
     $("click").onclick = mainProgram;
-    $("item_cost").focus(); //puts thnput bo
+    $("item_cost").focus()
 }
