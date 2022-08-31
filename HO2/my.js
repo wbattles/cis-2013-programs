@@ -14,3 +14,4 @@ var mainProgram = function () {
 window.onload = function () {
     $("click").onclick = mainProgram;
     $("item_cost").focus()
+}
