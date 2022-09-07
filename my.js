@@ -1,0 +1,17 @@
+var $ = function (id) {
+    return document.getElementById(id);
+}
+
+var mainProgram = function () {
+    var stringFirstName = prompt("What is your first name?");
+    if (!isNaN(stringFirstName)) {
+        alert("You did not enter a valid first name, so I will call you Jersey Rob. Hello Jersey!");
+    } else {
+        alert("Hello " + stringFirstName + "! It's great to meet you!");
+    }
+}
+
+window.onload = function () {
+    $("click").onclick = mainProgram;
+    $("item_cost").focus()
+}
