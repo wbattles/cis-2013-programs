@@ -1,10 +1,12 @@
-var floatMiles = parse.Float(prompt('Enter miles driven'));
+var floatMiles = parseFloat(prompt('Enter miles driven'));
 if (floatMiles == null) {
-    alert('Canceled')
+    alert('Canceled');
 }
 
-var floatGas = parse.Float(prompt('Enter gallons of gas used'));
+var floatGas = parseFloat(prompt('Enter gallons of gas used'));
 if (floatMiles == null) {
-    alert('Canceled')
+    alert('Canceled');
 }
 
+var floatMpg = parseFloat(floatMiles / floatGas);
+alert('Your car has: ' + floatMpg + 'mpg');
