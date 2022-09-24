@@ -8,10 +8,10 @@ if (intMiles == null) {
 
 //input gallons, force type float
 floatGas = parseFloat(prompt('Enter gallons of gas used'));
-if (floatMiles == null) {
+if (floatGas == null) {
     alert('Canceled');
 }
 
 //calculate mpg, display output
-floatMpg = parseFloat(floatMiles / floatGas);
-alert('Your car has: ' + floatMpg + 'mpg');
+floatMpg = parseFloat(intMiles / floatGas);
+alert('Your car has: ' + floatMpg + ' mpg');
