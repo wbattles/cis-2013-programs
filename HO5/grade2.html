@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Grade Calculator</title>
+    <link rel="stylesheet" href="grade.css">
+    <script type="text/javascript" src="grade2.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <h1>Grade Calculator</h1>
+        <p>
+            Enter the values requested below and click "Calculate".
+        </p>
+
+        <label for="hw_points">Homework Points: </label>
+        <input type="number" id="hw_points" onchange="limiter(hw_points);"/>
+        <br />
+
+        <label for="midterm_points">Midterm Points: </label>
+        <input type="number" id="midterm_points" onchange="limiter2(midterm_points);"/>
+        <br />
+
+        <label for="final_points">Final Points: </label>
+        <input type="number" id="final_points" onchange="limiter3(final_points);"/>
+        <br />
+
+        <label for="pass_fail">Grade Type: </label>
+        <select id="pass_fail">
+            <option value="grade">Letter</option>
+            <option value="passFail">Pass/Fail</option>
+        </select>
+        <br />
+
+        <label>&nbsp;</label>
+        <input type="button" id="calc" value="Calculate" />
+        <br />
+
+        <label for="letter_grade">Grade: </label>
+        <input type="text" id="letter_grade" disabled="disabled" />
+        <br><br>
+
+    </div>
+
+</body>
+
+</html>

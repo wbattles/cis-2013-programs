@@ -1,0 +1,56 @@
+body {
+    font-family: 'Avenir', sans-serif;
+    background: black;
+    margin: auto;
+    width: 640px;
+    padding: 50px;
+    color: #33475b;
+}
+
+#content {
+    width: 700px;
+    margin: 10px auto;
+    padding: 5px 0px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+#picture {
+    height: 450px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-weight: bold;
+    text-align: center;
+}
+
+label {
+    display: block;
+    width: 20em;
+    text-align: right;
+    padding-right: 1em;
+    float: left;
+}
+
+input {
+    display: block;
+    float: left;
+    width: 75px;
+}
+
+#futureValue {
+    color: #000000;
+}
+
+br {
+    clear: left;
+}
