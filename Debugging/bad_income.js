@@ -27,10 +27,10 @@ var calculateIncome = function () {
             }
         }
     }
-    var floatAnnualTax = floatAnnualIncome * floatTaxRate;
+    var floatAnnualTax = floatAnnualIncome * (floatTaxRate/100);
     $("annualTax").value = floatAnnualTax;
 
-    alert("Your annual income tax this year is $" + floatAnnualTax + "\nBased upon an annual income of $" + intAnnualIncome +
+    alert("Your annual income tax this year is $" + floatAnnualTax + "\nBased upon an annual income of $" + floatAnnualIncome +
         "\nAnd a tax rate of " + floatTaxRate + "% \nNote: Tax rate is based upon your age");
 
 }
