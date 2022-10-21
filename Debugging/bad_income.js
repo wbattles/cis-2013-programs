@@ -8,7 +8,7 @@ var calculateIncome = function () {
     var floatTaxRate
     if (intUserAge >= 65) {
         if (floatAnnualIncome <= 30000) {
-            floatTaxRate = 25;
+            floatTaxRate = 2.5;
         } else {
             if (floatAnnualIncome >= 30000 && floatAnnualIncome <= 75000) {
                 floatTaxRate = 5;
