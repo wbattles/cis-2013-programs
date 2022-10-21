@@ -22,7 +22,8 @@ var fixPrinter = function () {
     var boolPrinting = $("not_printing").selected;  //returns a value of true only when the not_printing html id is selected from the dropdown menu
     var boolRedLight = $("yes_redlight").selected;  //returns a value of true only when the yes_redlight html id is selected from the dropdown menu
     var boolRecognised = $("not_recognised").selected;  ////returns a value of true only when the not_recognized html id is selected from the dropdown menu
-
+    
+    //switch statements to replace nested if/else
     switch (true) {
         case boolPrinting === true && boolRedLight === true && boolRecognised === true:
             stringOutput = stringMessage2 + '\n' + stringMessage3 + '\n' + stringMessage4;
@@ -50,6 +51,7 @@ var fixPrinter = function () {
             break;
     }
 
+    //sends output to html display
     $("output").value = stringOutput
 };
 

@@ -23,16 +23,17 @@ var fixPrinter = function () {
     var boolRedLight = $("yes_redlight").selected;  //returns a value of true only when the yes_redlight html id is selected from the dropdown menu
     var boolRecognised = $("not_recognised").selected;  ////returns a value of true only when the not_recognized html id is selected from the dropdown menu
 
+    //nested if statements
     if (boolPrinting === true) {
         if (boolRedLight === true) {
             if (boolRecognised === true) {
-                stringOutput = stringMessage2 + stringMessage3 + stringMessage4;
+                stringOutput = stringMessage2 + '\n' + stringMessage3 + '\n' + stringMessage4;
             } else {
-                stringOutput = stringMessage4 + stringMessage5;
+                stringOutput = stringMessage4 + '\n' + stringMessage5;
             }
         } else {
             if (boolRecognised === true) {
-                stringOutput = stringMessage1 + stringMessage2 + stringMessage3;
+                stringOutput = stringMessage1 + '\n' + stringMessage2 + '\n' + stringMessage3;
             } else {
                 stringOutput = stringMessage5;
             }
@@ -40,7 +41,7 @@ var fixPrinter = function () {
     } else {
         if (boolRedLight === true) {
             if (boolRecognised === true) {
-                stringOutput = stringMessage3 + stringMessage4;
+                stringOutput = stringMessage3 + '\n' + stringMessage4;
             } else {
                 stringOutput = stringMessage4;
             }
@@ -53,6 +54,7 @@ var fixPrinter = function () {
         }
     }
 
+    //send output to html display
     $("output").value = stringOutput
 };
 
