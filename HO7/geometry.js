@@ -17,7 +17,7 @@ var do_it = function () {
     var floatRectArea;
     var floatRectPerim;
     var floatS;
-    var floatTriangeArea;
+    var floatTriangleArea;
     var floatTrianglePerim;
     var floatCircleArea;
     var floatCircleCircum;
@@ -117,7 +117,7 @@ function circleCircum(floatRadius) {
 
 window.onload = function () {
     //lines 51-56 clear the DOM values..
-    //    $("rect_width").value = "";
+    $("rect_width").value = "";
     //    $("rect_height").value = "";
     //    $("tri_side1").value = "";
     //    $("tri_side2").value = "";

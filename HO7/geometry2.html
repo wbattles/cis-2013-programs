@@ -2,12 +2,13 @@
 
 <head>
     <title>Geometry Calculator</title>
-    <link rel="stylesheet" type="text/css" href="geometry.css" />
-    <script type="text/javascript" src="geometry.js"></script>
+    <link rel="stylesheet" type="text/css" href="geometry2.css" />
+    <script type="text/javascript" src="geometry2.js"></script>
 </head>
 
 <body>
     <div id="content">
+        <div class="">
         <h1>CIS2013 Basic Geometry Calculator</h1>
         <p>Enter the values requested below and click the calculation button you prefer.</p>
 
@@ -16,13 +17,17 @@
 
         <label for="rect_height">Rectangle height:</label>
         <input type="text" id="rect_height" /><br />
-        <label for="letter_grade"
-            <input type="button" id="calc_tri_perim" value="Perimeter" />
-        </label>
-        <input type="text" id="letter_grade" disabled="disabled" />
-        <label for="letter_grade">Area: </label>
-        <input type="text" id="letter_grade" disabled="disabled" />
-        <br><br>
+        
+        <br>
+            <label for="calc_rect_area"><input type="button" id="calc_rect_area" value="Area" style="float: right";/></label>
+            <input type="text" id="rectArea" disabled="disabled"/><br />
+
+            <label for="calc_rect_perim"><input type="button" id="calc_rect_perim" value="Perimeter" style="float: right";/></label>
+            <input type="text" id="rectPerim" disabled="disabled" /><br />
+        <br>
+
+
+
 
         <label for="tri_side1">Triangle side 1:</label>
         <input type="text" id="tri_side1" /><br />
@@ -33,32 +38,34 @@
         <label for="tri_side3">Triangle side 3:</label>
         <input type="text" id="tri_side3" /><br />
 
+        <br>
+            <label for="calc_tri_area"><input type="button" id="calc_tri_area" value="Area" style="float: right"; /></label>
+            <input type="text" id="triArea" disabled="disabled" /><br />
+        
+            <label for="calc_tri_perim"><input type="button" id="calc_tri_perim" value="Perimeter" style="float: right"; /></label>
+            <input type="text" id="triPerim" disabled="disabled" /><br />
+        <br>
+
+
+
+
         <label for="radius">Circle radius:</label>
         <input type="text" id="radius" /><br />
 
-        <fieldset>
-            <label for="calc_rect_area">Rectangle:</label>
-            <input type="button" id="calc_rect_area" value="Area" />
-            <input type="button" id="calc_rect_perim" value="Perimeter" />
-        </fieldset>
-
-        <fieldset>
-            <label for="calc_tri_area">Triangle:</label>
-            <input type="button" id="calc_tri_area" value="Area" />
-            <input type="button" id="calc_tri_perim" value="Perimeter" />
-        </fieldset>
-
-        <fieldset>
-            <label for="calc_circle_area">Circle:</label>
-            <input type="button" id="calc_circle_area" value="Area" />
-            <input type="button" id="calc_circle_circum" value="Circumference" />
-        </fieldset>
-
-        <fieldset>
-            <label for="calc_all">Calculate everthing at once:</label>
-            <input type="button" id="calc_all" value="Do it!!" />
-        </fieldset>
+        <br>
+            <label for="calc_circle_area"><input type="button" id="calc_circle_area" value="Area" style="float: right" ; /></label>
+            <input type="text" id="circleArea" disabled="disabled" /><br />
         
+            <label for="calc_circle_circum"><input type="button" id="calc_circle_circum" value="Circumference" style="float: right" ; /></label>
+            <input type="text" id="circleCircum" disabled="disabled" /><br />
+        <br><br><br>
+
+
+
+        <label for="calc_all"><input type="button" id="calc_all" value="Calculate All" style="float: right" ; /></label>
+        <br><br><br>
+
+
     </div>
 
 </body>
