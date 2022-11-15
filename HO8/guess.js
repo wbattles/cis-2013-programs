@@ -27,7 +27,7 @@ while (intGuess !== intRandom) {
         alert("Correct")
         break;
     // compares user input to entered range
-    } else if (isNan(intGuess) || intGuess < intMin || intGuess > intMax) {
+    } else if (isNaN(intGuess) || intGuess < intMin || intGuess > intMax) {
         alert("Outside of range")
     // compare user input to correct value
     } else {
