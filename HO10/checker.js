@@ -18,12 +18,14 @@ var passwordCheckOld = function () {
         if (arrayBadPasswords.includes(stringPassword)) {
             stringOutput = "bad"
         } else {
+            // check required length
             if (stringPassword.length < 8) {
                 stringOutput = "bad"
             } else {
                 stringOutput = "good"
             }
         }
+        // send value to HTML
         $("output").value = stringOutput
     }
 };
